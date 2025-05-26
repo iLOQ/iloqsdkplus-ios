@@ -1,7 +1,7 @@
 // swift-tools-version:5.7
 import PackageDescription
 
-let remoteKotlinUrl = "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/mobile/iLOQSdkPlus/sdk-ios/0.9.1100/sdk-ios-0.9.1100.zip"
+let remoteKotlinUrl = "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/mobile/iLOQSdkPlus/sdk-ios/0.9.1101/sdk-ios-0.9.1101.zip"
 let remoteKotlinChecksum = "453ec8b6732392836b60d50f2387835e380f5484786c2af6e9f41ed1c68b6691"
 let packageName = "iLOQSdkPlus"
 
