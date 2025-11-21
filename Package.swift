@@ -16,19 +16,21 @@ let package = Package(
             targets: ["\(packageName)Target"]
         ),
     ],
-    dependencies: [
-        .package(url: "https://github.com/sqlcipher/SQLCipher.swift.git", from: "4.10.0")
-    ],
     targets: [
         .target(
             name: "\(packageName)Target",
             dependencies: [
                 "iLOQSdkPlusBinary",
                 "iLOQKeyUpdaterBinary",
-                "iLOQLockCommunicationSDKBinary",
-                .product(name: "SQLCipher", package: "SQLCipher.swift")
+                "SQLCipherBinary",
+                "iLOQLockCommunicationSDKBinary"
             ]
         ),
+        .binaryTarget(
+            name: "SQLCipherBinary",
+            url: "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/ios/SQLCipher/4.10.0/SQLCipher-4.10.0.zip",
+            checksum: "fa8a0ed97b5df95bfb450fa1503d5975faf25ac1b00676006fb606fb5aafcb6b"
+         ),
         .binaryTarget(
             name: "iLOQSdkPlusBinary",
             url: remoteKotlinUrl,
