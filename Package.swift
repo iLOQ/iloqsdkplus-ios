@@ -1,8 +1,8 @@
 // swift-tools-version:5.6
 import PackageDescription
 
-let remoteKotlinUrl = "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/mobile/iLOQSdkPlus/sdk-ios/3.0.1490/sdk-ios-3.0.1490.zip"
-let remoteKotlinChecksum = "16fe80131987c14b30c83978fd05bd4e074f5616f6105d96bfd4e6b2d52cb9d4"
+let remoteKotlinUrl = "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/mobile/iLOQSdkPlus/sdk-ios/3.1.1550/sdk-ios-3.1.1550.zip"
+let remoteKotlinChecksum = "2541b63af35dfd42c322b8d8fe161fb31798e11f2887ae09dd2f656715415ff3"
 let packageName = "iLOQSdkPlus"
 
 let package = Package(
@@ -43,8 +43,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "iLOQLockCommunicationSDKBinary",
-            url: "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/ios/iLoqLockCommunicationSDK/1.2.255/iLoqLockCommunicationSDK-1.2.255.zip",
-            checksum: "83becb8cbcdca8231cdf802b4b8eafc59b34e1739a280ee1b556f5ac450564ad"
+            url: "https://repository.iloq.com:8444/repository/maven-iloq-sdk-plus/com/iloq/ios/iLoqLockCommunicationSDK/1.3.287/iLoqLockCommunicationSDK-1.3.287.zip",
+            checksum: "da13fe02e52f9787e9f2c5a416e51d90ebb154da20e53b92e0be5b3c2607ff66"
          ),
    ]
 )
